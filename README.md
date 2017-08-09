@@ -1,4 +1,1 @@
-# 2DUnityTutorial
-A 2D tutorial for Unity 2017.
-
-Test.
+View the [Tutorial here](https://github.com/hardlydifficult/Platformer/blob/master/README.md).
