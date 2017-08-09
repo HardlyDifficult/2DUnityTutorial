@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 83ec8437acec2004a88b6fd7252f8d57
+timeCreated: 1502309957
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KenPixel High Square
+  fontNames:
+  - KenPixel High Square
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

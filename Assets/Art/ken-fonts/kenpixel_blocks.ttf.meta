@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7b2c303e90c3d364db6f3fdff0eab5a6
+timeCreated: 1502309957
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KenPixel Blocks
+  fontNames:
+  - KenPixel Blocks
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
