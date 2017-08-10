@@ -8,6 +8,9 @@ using UnityEditor.SceneManagement;
 [InitializeOnLoad]
 public class AutoSave
 {
+  /// <summary>
+  /// Called before the game starts c/o InitializeOnLoad.
+  /// </summary>
   static AutoSave()
   {
     EditorApplication.playmodeStateChanged
