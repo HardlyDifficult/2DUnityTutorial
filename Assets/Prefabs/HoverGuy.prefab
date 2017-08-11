@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114937077773777800}
   - component: {fileID: 114955996687930942}
   - component: {fileID: 114194342311855896}
+  - component: {fileID: 114177316993746008}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -172,6 +173,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114177316993746008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1256622619781144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011235ca5dcbe4e4cab743034f48798e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layersToKill:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &114194342311855896
 MonoBehaviour:
   m_ObjectHideFlags: 1

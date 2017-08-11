@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58904269954461900}
   - component: {fileID: 114813006476087820}
   - component: {fileID: 114612658039215810}
+  - component: {fileID: 114908441959666486}
   m_Layer: 8
   m_Name: SpikeBall
   m_TagString: Untagged
@@ -132,6 +133,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingVelocity: {x: 3, y: 0}
   startingAngularVelocity: -500
+--- !u!114 &114908441959666486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117464161221816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011235ca5dcbe4e4cab743034f48798e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layersToKill:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!212 &212136932443379864
 SpriteRenderer:
   m_ObjectHideFlags: 1

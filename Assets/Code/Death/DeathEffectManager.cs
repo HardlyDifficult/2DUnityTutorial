@@ -46,7 +46,6 @@ public class DeathEffectManager : MonoBehaviour
       maxTimeTillDestroy = Mathf.Max(
         maxTimeTillDestroy,
         timeTillDestroy);
-
     }
 
     Destroy(gameObject, maxTimeTillDestroy);
