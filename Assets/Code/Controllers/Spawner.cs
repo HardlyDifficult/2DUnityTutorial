@@ -15,6 +15,18 @@ public class Spawner : MonoBehaviour
   [SerializeField]
   float maxTimeBetweenSpawns = 10;
 
+  [SerializeField]
+  ContactFilter2D contactFilter;
+
+  Collider2D safeZoneCollider;
+
+  static Collider2D[] tempColliderList = new Collider2D[1];
+
+  protected void Awake()
+  {
+    safeZoneCollider = GetComponent<Collider2D>();
+  }
+
   protected void Start()
   {
     Debug.Assert(thingToSpawn != null);
@@ -29,10 +41,15 @@ public class Spawner : MonoBehaviour
   {
     while(true)
     {
-      Instantiate(
+      if(safeZoneCollider == null
+        || safeZoneCollider.OverlapCollider(
+          contactFilter, tempColliderList) == 0)
+      {
+        Instantiate(
         thingToSpawn,
         transform.position,
         Quaternion.identity);
+      }
 
       // Sleep before the next spawn
       float sleepTime = UnityEngine.Random.Range(
