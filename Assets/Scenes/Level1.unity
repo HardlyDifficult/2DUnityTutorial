@@ -1823,6 +1823,7 @@ GameObject:
   - component: {fileID: 1712952954}
   - component: {fileID: 1712952953}
   - component: {fileID: 1712952956}
+  - component: {fileID: 1712952957}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1892,6 +1893,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredWalkDirection: 0
   walkSpeed: 100
+--- !u!114 &1712952957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712952952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18aa867e9f2ebd944a91fdfbbcb27ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1737243896
 GameObject:
   m_ObjectHideFlags: 0
