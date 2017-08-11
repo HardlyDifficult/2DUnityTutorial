@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114955996687930942}
   - component: {fileID: 114194342311855896}
   - component: {fileID: 114177316993746008}
+  - component: {fileID: 114969801841871016}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -229,6 +230,17 @@ MonoBehaviour:
   timeBeforeFirstWander: 10
   minTimeBetweenReconsideringDirection: 1
   maxTimeBetweenReconsideringDirection: 10
+--- !u!114 &114969801841871016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1256622619781144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d649944c82e0c7349b3c6e8e4ad35c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212560238735076740
 SpriteRenderer:
   m_ObjectHideFlags: 1
