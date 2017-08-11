@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4120238651812038}
   - component: {fileID: 50992198721491942}
   - component: {fileID: 70020688246429396}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
