@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 70020688246429396}
   - component: {fileID: 114937077773777800}
   - component: {fileID: 114955996687930942}
+  - component: {fileID: 114194342311855896}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -161,7 +162,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374737455713062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d9e00662a2e72f44db0623449d0363cc, type: 2}
   m_CullingMode: 0
@@ -171,6 +172,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114194342311855896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1256622619781144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb3f2249a903b145aaa86e0edd5ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillEnabled: 3
+  componentsToEnable:
+  - {fileID: 114955996687930942}
+  - {fileID: 95793969075642844}
 --- !u!114 &114937077773777800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +206,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1256622619781144}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 428c4811bc108f34797606ed761801b5, type: 3}
   m_Name: 
@@ -230,7 +246,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 15f09201f0997054b964efa801002531, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4012299a6b54b94abcf0f4a8f543678, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

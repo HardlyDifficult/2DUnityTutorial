@@ -119,10 +119,11 @@ GameObject:
   - component: {fileID: 32656504}
   - component: {fileID: 32656503}
   - component: {fileID: 32656506}
-  - component: {fileID: 32656507}
   - component: {fileID: 32656508}
   - component: {fileID: 32656510}
   - component: {fileID: 32656509}
+  - component: {fileID: 32656507}
+  - component: {fileID: 32656511}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -177,7 +178,7 @@ Transform:
   m_Children:
   - {fileID: 1262756795}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &32656506
 MonoBehaviour:
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 32656502}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55dba014bf6e07441b839a1e70bc2b20, type: 3}
   m_Name: 
@@ -308,6 +309,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &32656511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32656502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb3f2249a903b145aaa86e0edd5ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillEnabled: 3
+  componentsToEnable:
+  - {fileID: 32656507}
+  - {fileID: 1262756796}
 --- !u!1 &64996512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1195,7 @@ Transform:
   - {fileID: 719537591}
   - {fileID: 2118242958}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &992996857
 MonoBehaviour:
@@ -1924,7 +1940,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262756794}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 665e13737501b0c45bea3bf7e754b76f, type: 2}
   m_CullingMode: 0
@@ -1966,7 +1982,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 68d5e66c2982c104aa194956dabde39b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba4f678588ebf2245b46665d54297c37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
