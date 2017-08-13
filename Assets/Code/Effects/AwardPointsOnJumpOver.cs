@@ -28,7 +28,7 @@ public class AwardPointsOnJumpOver : MonoBehaviour
   [SerializeField]
   LayerMask playerLayerMask;
 
-  static RaycastHit2D[] tempHitList = new RaycastHit2D[1];
+  static readonly RaycastHit2D[] tempHitList = new RaycastHit2D[1];
 
   float lastPickupTime;
 
