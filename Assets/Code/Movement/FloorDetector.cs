@@ -44,6 +44,8 @@ public class FloorDetector : MonoBehaviour
 
   static readonly Collider2D[] tempColliderList = new Collider2D[3];
 
+  static readonly RaycastHit2D[] tempHitList = new RaycastHit2D[1];
+
   Collider2D myCollider;
 
   protected void Awake()
@@ -107,14 +109,13 @@ public class FloorDetector : MonoBehaviour
 
   Collider2D DetectFloorUnderUs()
   {
-    RaycastHit2D[] result = new RaycastHit2D[1];
     if(Physics2D.Raycast(
       transform.position,
       Vector2.down,
       floorFilter,
-      result) > 0)
+      tempHitList) > 0)
     {
-      return result[0].collider;
+      return tempHitList[0].collider;
     }
 
     return null;
