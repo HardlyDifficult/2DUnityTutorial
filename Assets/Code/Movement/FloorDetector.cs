@@ -7,7 +7,7 @@
 public class FloorDetector : MonoBehaviour
 {
   /// <summary>
-  /// Bounds for the collider used to detect floors.
+  /// Bounds for the collider used to detect the floor.
   /// This may be the entity collider or a specialized
   /// feet collider.
   /// </summary>
@@ -69,30 +69,16 @@ public class FloorDetector : MonoBehaviour
     { // Not standing on a floor, find the floor under us
       floorUp = null;
       floorRotation = null;
-      Collider2D floorUnderUs = DetectFloorUnderUs();
+      RaycastHit2D? floorUnderUs = DetectFloorUnderUs();
       if(floorUnderUs != null)
       {
-        distanceToFloor = CalculateDistanceToFloor(floorUnderUs);
+        distanceToFloor = floorUnderUs.Value.distance;
       }
       else
       {
         distanceToFloor = null;
       }
     }
-  }
-
-  float CalculateDistanceToFloor(
-    Collider2D floorUnderUs)
-  {
-    float yOfTopOfFloor = floorUnderUs.bounds.max.y;
-
-    if(floorUnderUs is BoxCollider2D)
-    {
-      BoxCollider2D boxCollider = (BoxCollider2D)floorUnderUs;
-      yOfTopOfFloor += boxCollider.edgeRadius;
-    }
-
-    return myCollider.bounds.min.y - yOfTopOfFloor;
   }
 
   void CalculateFloorRotation(
@@ -107,7 +93,7 @@ public class FloorDetector : MonoBehaviour
     }
   }
 
-  Collider2D DetectFloorUnderUs()
+  RaycastHit2D? DetectFloorUnderUs()
   {
     if(Physics2D.Raycast(
       transform.position,
@@ -115,7 +101,7 @@ public class FloorDetector : MonoBehaviour
       floorFilter,
       tempHitList) > 0)
     {
-      return tempHitList[0].collider;
+      return tempHitList[0];
     }
 
     return null;
@@ -124,7 +110,10 @@ public class FloorDetector : MonoBehaviour
   Collider2D DetectTheFloorWeAreStandingOn()
   {
     int foundColliderCount
-      = Physics2D.OverlapCollider(myCollider, floorFilter, tempColliderList);
+      = Physics2D.OverlapCollider(
+        myCollider, 
+        floorFilter, 
+        tempColliderList);
 
     for(int i = 0; i < foundColliderCount; i++)
     {
