@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 114042097034801602}
   - component: {fileID: 114626195834425342}
   - component: {fileID: 114660018450344432}
+  - component: {fileID: 114183816755562596}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -255,6 +256,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredWalkDirection: 0
   walkSpeed: 100
+--- !u!114 &114183816755562596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1267353151542916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c703a55c8b469448dde8414c5cd8b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &114376696572412414
 MonoBehaviour:
   m_ObjectHideFlags: 1
