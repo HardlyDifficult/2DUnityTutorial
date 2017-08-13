@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
 
   Collider2D safeZoneCollider;
 
-  static Collider2D[] tempColliderList = new Collider2D[1];
+  static readonly Collider2D[] tempColliderList = new Collider2D[1];
 
   protected void Awake()
   {
