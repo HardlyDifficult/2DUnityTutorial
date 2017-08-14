@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 114969801841871016}
   - component: {fileID: 114043794448068324}
   - component: {fileID: 114031360740647580}
+  - component: {fileID: 114534365004049220}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -361,6 +362,19 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &114534365004049220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1256622619781144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6cb0bbb257fc748bf2686be99c4557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpSpeedToFloor: 4
+  lerpSpeedWhileInAir: 0.5
 --- !u!114 &114871905051587586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -396,6 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c4811bc108f34797606ed761801b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oddsOfGoingUpHill: 0.8
   timeBeforeFirstWander: 10
   minTimeBetweenReconsideringDirection: 1
   maxTimeBetweenReconsideringDirection: 10
