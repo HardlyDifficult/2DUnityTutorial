@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 70983081610136048}
   - component: {fileID: 114525022148022154}
   - component: {fileID: 114962285152631950}
+  - component: {fileID: 114001274424933216}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -161,7 +162,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142311218848484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 61c2a84204dae9f48a282d87b7288b42, type: 2}
   m_CullingMode: 0
@@ -171,6 +172,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114001274424933216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c148da3c23828874f98629970d00738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillEnabled: 3
+  componentsToEnable:
+  - {fileID: 114962285152631950}
+  - {fileID: 95860209262634560}
 --- !u!114 &114525022148022154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +206,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1962356292160402}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3505aec28fcd97440af36f10b10b6326, type: 3}
   m_Name: 

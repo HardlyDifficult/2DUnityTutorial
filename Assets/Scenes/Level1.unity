@@ -1765,10 +1765,11 @@ GameObject:
   - component: {fileID: 1304774050}
   - component: {fileID: 1304774049}
   - component: {fileID: 1304774052}
-  - component: {fileID: 1304774053}
   - component: {fileID: 1304774054}
   - component: {fileID: 1304774056}
   - component: {fileID: 1304774055}
+  - component: {fileID: 1304774053}
+  - component: {fileID: 1304774057}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -1844,7 +1845,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1304774048}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31af11bef0f439f45b735842bf3044f8, type: 3}
   m_Name: 
@@ -1954,6 +1955,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1304774057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304774048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c148da3c23828874f98629970d00738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillEnabled: 3
+  componentsToEnable:
+  - {fileID: 1304774053}
+  - {fileID: 1422807706}
 --- !u!1 &1348743505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,7 +2156,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1422807705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f2f424bbb14760b4ca9c09421efc44f6, type: 2}
   m_CullingMode: 0
