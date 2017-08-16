@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 50543713201786428}
   - component: {fileID: 58523503415595974}
   - component: {fileID: 114690577683391854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpikeBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
