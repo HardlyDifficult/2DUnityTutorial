@@ -61,6 +61,9 @@ GameObject:
   - component: {fileID: 114971896272242810}
   - component: {fileID: 114184782540107652}
   - component: {fileID: 114141086860830014}
+  - component: {fileID: 114667864914644696}
+  - component: {fileID: 114356451240287012}
+  - component: {fileID: 114890424489721054}
   m_Layer: 8
   m_Name: SpikeBall
   m_TagString: Untagged
@@ -236,6 +239,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589982290e8303b41abad715e22eb034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114356451240287012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996154684541846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191845d116f03634bbfd0bbee10618ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredClimbDirection: 0
+  climbSpeed: 60
+  ladderFilter:
+    useTriggers: 1
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 8192
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &114648199902200564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,6 +275,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce849a9762d1834c9b1c393866eb8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114667864914644696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996154684541846}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30bfdc11caa9f4bbb81e98bed250b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114690577683391854
@@ -260,6 +301,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingVelocity: {x: 3, y: 0}
   startingAngularVelocity: -500
+--- !u!114 &114890424489721054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996154684541846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fe5654d92c95741966791480c4cf6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oddsOfClimbingLadderUp: 0
+  oddsOfClimbingLadderDown: 0.5
+  minTimeBetweenReconsideringDirection: 1
+  maxTimeBetweenReconsideringDirection: 10
 --- !u!114 &114931674883311502
 MonoBehaviour:
   m_ObjectHideFlags: 1

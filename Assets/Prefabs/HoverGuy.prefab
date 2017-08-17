@@ -82,6 +82,9 @@ GameObject:
   - component: {fileID: 114906284265789704}
   - component: {fileID: 114591670331705088}
   - component: {fileID: 114824366208033684}
+  - component: {fileID: 114285201220753276}
+  - component: {fileID: 114593219736798534}
+  - component: {fileID: 114607411671949268}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -296,6 +299,17 @@ MonoBehaviour:
   layersToKill:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &114285201220753276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30bfdc11caa9f4bbb81e98bed250b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114525022148022154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +334,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589982290e8303b41abad715e22eb034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114593219736798534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191845d116f03634bbfd0bbee10618ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredClimbDirection: 0
+  climbSpeed: 60
+  ladderFilter:
+    useTriggers: 1
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 8192
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!114 &114607411671949268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fe5654d92c95741966791480c4cf6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oddsOfClimbingLadderUp: 0.9
+  oddsOfClimbingLadderDown: 0.1
+  minTimeBetweenReconsideringDirection: 1
+  maxTimeBetweenReconsideringDirection: 10
 --- !u!114 &114658637099969114
 MonoBehaviour:
   m_ObjectHideFlags: 1
