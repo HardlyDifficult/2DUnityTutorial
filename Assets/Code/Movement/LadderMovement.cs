@@ -117,7 +117,7 @@ public class LadderMovement : MonoBehaviour
 
     Bounds ladderBounds
       = ladder.GetComponent<Collider2D>().bounds;
-    Bounds entityBounds = floorDetector.feetBounds;
+    Bounds entityBounds = floorDetector.feetCollider.bounds;
 
     if(isOnLadder == false)
     {
