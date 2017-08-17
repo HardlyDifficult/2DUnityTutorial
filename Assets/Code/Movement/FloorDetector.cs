@@ -39,6 +39,11 @@ public class FloorDetector : MonoBehaviour
     get; private set;
   }
 
+  public Collider2D feetCollider
+  {
+    get; private set;
+  }
+  
   [SerializeField]
   ContactFilter2D floorFilter;
 
@@ -47,19 +52,16 @@ public class FloorDetector : MonoBehaviour
   /// </summary>
   static readonly Collider2D[] tempColliderList = new Collider2D[3];
 
-
   /// <summary>
   /// Used for the Raycast below.
   /// </summary>
   static readonly RaycastHit2D[] tempHitList = new RaycastHit2D[1];
 
-  Collider2D myCollider;
-
   protected void Awake()
   {
-    myCollider = GetComponent<Collider2D>();
+    feetCollider = GetComponent<Collider2D>();
 
-    Debug.Assert(myCollider != null);
+    Debug.Assert(feetCollider != null);
   }
 
   protected void FixedUpdate()
@@ -118,14 +120,14 @@ public class FloorDetector : MonoBehaviour
   {
     int foundColliderCount
       = Physics2D.OverlapCollider(
-        myCollider,
+        feetCollider,
         floorFilter,
         tempColliderList);
 
     for(int i = 0; i < foundColliderCount; i++)
     {
       Collider2D collider = tempColliderList[i];
-      ColliderDistance2D distance = collider.Distance(myCollider);
+      ColliderDistance2D distance = collider.Distance(feetCollider);
 
       if(distance.distance >= -.1f
         && Vector2.Dot(Vector2.up, distance.normal) > 0)
