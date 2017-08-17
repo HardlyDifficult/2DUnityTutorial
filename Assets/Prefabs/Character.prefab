@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 114506847462239782}
   - component: {fileID: 114924024106375154}
   - component: {fileID: 114957855441258160}
+  - component: {fileID: 114166388467901042}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -227,6 +228,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880eb01c2005dd34aa6611d8449b69b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114166388467901042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561968062370088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cce35d90a6825842a21d7f7ffc1c3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpSpeedToFloor: 50
+  lerpSpeedWhileInAir: 1
 --- !u!114 &114226224762827458
 MonoBehaviour:
   m_ObjectHideFlags: 1
