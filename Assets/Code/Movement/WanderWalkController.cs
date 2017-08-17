@@ -24,6 +24,8 @@ public class WanderWalkController : MonoBehaviour
 
   FloorDetector floorDetector;
 
+  LadderMovement ladderMovement;
+
   protected void Awake()
   {
     Debug.Assert(timeBeforeFirstWander >= 0);
@@ -34,6 +36,15 @@ public class WanderWalkController : MonoBehaviour
 
     walkMovement = GetComponent<WalkMovement>();
     floorDetector = GetComponentInChildren<FloorDetector>();
+    ladderMovement = GetComponent<LadderMovement>();
+
+    if(ladderMovement != null)
+    {
+      ladderMovement.onGettingOnLadder
+        += LadderMovement_onGettingOnLadder;
+      ladderMovement.onGettingOffLadder
+        += LadderMovement_onGettingOffLadder;
+    }
 
     Debug.Assert(walkMovement != null);
     Debug.Assert(floorDetector != null);
@@ -42,6 +53,18 @@ public class WanderWalkController : MonoBehaviour
   protected void Start()
   {
     StartCoroutine(Wander());
+  }
+
+  void LadderMovement_onGettingOnLadder()
+  {
+    // Stop walking when getting on a ladder.
+    walkMovement.desiredWalkDirection = 0;
+  }
+
+  void LadderMovement_onGettingOffLadder()
+  {
+    // Resume walking when getting off a ladder.
+    SelectARandomWalkDirection();
   }
 
   IEnumerator Wander()
@@ -66,6 +89,11 @@ public class WanderWalkController : MonoBehaviour
 
   void SelectARandomWalkDirection()
   {
+    if(ladderMovement != null && ladderMovement.isOnLadder)
+    { // Don't change directions if currently on a ladder.
+      return;
+    }
+
     float dot;
     if(floorDetector.floorUp != null)
     {
