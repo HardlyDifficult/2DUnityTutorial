@@ -6,6 +6,7 @@ using UnityEngine;
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(DisablePhysics))] //
 public class LadderMovement : MonoBehaviour
 {
   /// <summary>
@@ -40,6 +41,8 @@ public class LadderMovement : MonoBehaviour
   Collider2D myCollider;
 
   FloorDetector floorDetector;
+
+  DisablePhysics disablePhysics; //
 
   /// <summary>
   /// Used for OverlapCollider below.
@@ -91,10 +94,12 @@ public class LadderMovement : MonoBehaviour
     myBody = GetComponent<Rigidbody2D>();
     myCollider = GetComponent<Collider2D>();
     floorDetector = GetComponentInChildren<FloorDetector>();
+    disablePhysics = GetComponent<DisablePhysics>(); //
 
     Debug.Assert(myBody != null);
     Debug.Assert(myCollider != null);
     Debug.Assert(floorDetector != null);
+    Debug.Assert(disablePhysics != null);
   }
 
   protected void FixedUpdate()
@@ -188,6 +193,7 @@ public class LadderMovement : MonoBehaviour
 
   void OnGettingOnLadder()
   {
+    disablePhysics.enabled = true; //
     if(onGettingOnLadder != null)
     {
       onGettingOnLadder();
@@ -196,6 +202,7 @@ public class LadderMovement : MonoBehaviour
 
   void OnGettingOffLadder()
   {
+    disablePhysics.enabled = false; //
     desiredClimbDirection = 0;
 
     if(onGettingOffLadder != null)

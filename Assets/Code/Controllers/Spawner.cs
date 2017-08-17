@@ -46,9 +46,9 @@ public class Spawner : MonoBehaviour
           contactFilter, tempColliderList) == 0)
       {
         Instantiate(
-        thingToSpawn,
-        transform.position,
-        Quaternion.identity);
+          thingToSpawn,
+          transform.position,
+          Quaternion.identity);
       }
 
       // Sleep before the next spawn
