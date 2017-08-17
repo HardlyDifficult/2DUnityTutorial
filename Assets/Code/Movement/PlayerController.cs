@@ -11,19 +11,26 @@ public class PlayerController : MonoBehaviour
 
   JumpMovement jumpMovement;
 
+  LadderMovement ladderMovement;
+
   protected void Awake()
   {
     walkMovement = GetComponent<WalkMovement>();
     jumpMovement = GetComponent<JumpMovement>();
+    // InChildren as LadderMovement may be on the child Feet.
+    ladderMovement = GetComponentInChildren<LadderMovement>();
 
     Debug.Assert(walkMovement != null);
     Debug.Assert(jumpMovement != null);
+    Debug.Assert(ladderMovement != null);
   }
 
   protected void FixedUpdate()
   {
     walkMovement.desiredWalkDirection
       = Input.GetAxis("Horizontal");
+    ladderMovement.desiredClimbDirection
+      = Input.GetAxis("Vertical");
   }
 
   protected void Update()

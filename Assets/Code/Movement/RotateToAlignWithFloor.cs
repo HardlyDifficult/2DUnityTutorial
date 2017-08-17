@@ -11,13 +11,13 @@ public class RotateToAlignWithFloor : MonoBehaviour
   /// Rotation lerp speed while standing.
   /// </summary>
   [SerializeField]
-  float lerpSpeedToFloor = .4f;
+  float lerpSpeedToFloor = 50f;
 
   /// <summary>
   /// Rotation lerp speed while in the air.
   /// </summary>
   [SerializeField]
-  float lerpSpeedWhileInAir = .05f;
+  float lerpSpeedWhileInAir = 1f;
 
   FloorDetector floorDetector;
 
