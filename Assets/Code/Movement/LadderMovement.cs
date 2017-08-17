@@ -240,18 +240,11 @@ public class LadderMovement : MonoBehaviour
         = ladder.transform.position
           - transform.position;
       float distanceToLadder = delta.sqrMagnitude;
-      if(closestLadder == null)
+      if(closestLadder == null
+       || distanceToLadder < distanceToClosestLadder)
       {
         closestLadder = ladder;
         distanceToClosestLadder = distanceToLadder;
-      }
-      else
-      {
-        if(distanceToLadder < distanceToClosestLadder)
-        {
-          closestLadder = ladder;
-          distanceToClosestLadder = distanceToLadder;
-        }
       }
     }
 
