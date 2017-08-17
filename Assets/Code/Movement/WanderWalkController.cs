@@ -9,6 +9,9 @@ using UnityEngine;
 public class WanderWalkController : MonoBehaviour
 {
   [SerializeField]
+  float oddsOfGoingUpHill = .8f;
+
+  [SerializeField]
   float timeBeforeFirstWander = 10;
 
   [SerializeField]
@@ -19,6 +22,8 @@ public class WanderWalkController : MonoBehaviour
 
   WalkMovement walkMovement;
 
+  FloorDetector floorDetector;
+
   protected void Awake()
   {
     Debug.Assert(timeBeforeFirstWander >= 0);
@@ -28,8 +33,10 @@ public class WanderWalkController : MonoBehaviour
     Debug.Assert(maxTimeBetweenReconsideringDirection > 0);
 
     walkMovement = GetComponent<WalkMovement>();
+    floorDetector = GetComponentInChildren<FloorDetector>();
 
     Debug.Assert(walkMovement != null);
+    Debug.Assert(floorDetector != null);
   }
 
   protected void Start()
@@ -59,8 +66,31 @@ public class WanderWalkController : MonoBehaviour
 
   void SelectARandomWalkDirection()
   {
-    walkMovement.desiredWalkDirection
+    float dot;
+    if(floorDetector.floorUp != null)
+    {
+      dot = Vector2.Dot(floorDetector.floorUp.Value, Vector2.right);
+    }
+    else
+    {
+      dot = 0;
+    }
+
+    if(dot < 0)
+    {
+      walkMovement.desiredWalkDirection
+        = UnityEngine.Random.value <= oddsOfGoingUpHill ? 1 : -1;
+    }
+    else if(dot > 0)
+    {
+      walkMovement.desiredWalkDirection
+        = UnityEngine.Random.value <= oddsOfGoingUpHill ? -1 : 1;
+    }
+    else
+    {
+      walkMovement.desiredWalkDirection
       = UnityEngine.Random.value <= .5f ? 1 : -1;
+    }
   }
 
   float GetRandomTimeToSleep()

@@ -6,6 +6,19 @@
 [RequireComponent(typeof(Collider2D))]
 public class FloorDetector : MonoBehaviour
 {
+  /// <summary>
+  /// Bounds for the collider used to detect the floor.
+  /// This may be the entity collider or a specialized
+  /// feet collider.
+  /// </summary>
+  public Bounds feetBounds
+  {
+    get
+    {
+      return myCollider.bounds;
+    }
+  }
+
   public bool isTouchingFloor
   {
     get; private set;
