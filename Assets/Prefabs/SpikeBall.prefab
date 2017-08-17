@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114690577683391854}
   - component: {fileID: 114648199902200564}
   - component: {fileID: 114971896272242810}
+  - component: {fileID: 114184782540107652}
   m_Layer: 8
   m_Name: SpikeBall
   m_TagString: Untagged
@@ -109,6 +110,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.65
+--- !u!114 &114184782540107652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996154684541846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589982290e8303b41abad715e22eb034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114648199902200564
 MonoBehaviour:
   m_ObjectHideFlags: 1

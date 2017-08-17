@@ -34,6 +34,8 @@ public class LevelController : MonoBehaviour
       return;
     }
 
+    BroadcastPlayerDied();
+
     if(GameController.instance.lifeCount <= 0)
     {
       isGameOver = true;
@@ -59,6 +61,17 @@ public class LevelController : MonoBehaviour
   void StartLevel()
   {
     Instantiate(characterPrefab);
+  }
+
+  void BroadcastPlayerDied()
+  {
+    PlayerDeathMonoBehaviour[] gameObjectList
+      = GameObject.FindObjectsOfType<PlayerDeathMonoBehaviour>();
+    for(int i = 0; i < gameObjectList.Length; i++)
+    {
+      PlayerDeathMonoBehaviour playerDeath = gameObjectList[i];
+      playerDeath.OnPlayerDeath();
+    }
   }
 
   void YouLose()
