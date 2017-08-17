@@ -30,7 +30,7 @@ public class FloorDetector : MonoBehaviour
   {
     get; private set;
   }
-
+  
   [SerializeField]
   ContactFilter2D floorFilter;
 
