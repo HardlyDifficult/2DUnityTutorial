@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 114469500753186300}
   - component: {fileID: 114506847462239782}
   - component: {fileID: 114924024106375154}
+  - component: {fileID: 114957855441258160}
   m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
@@ -338,6 +339,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac5bf19dff250c4eb2b3e4e542070b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114957855441258160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561968062370088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024b204f58698dd4ea1252f60ff021f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!212 &212181283539484408
 SpriteRenderer:
   m_ObjectHideFlags: 1

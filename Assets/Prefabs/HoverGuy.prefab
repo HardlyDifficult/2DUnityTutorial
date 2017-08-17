@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4888682079130876}
   - component: {fileID: 58250571250334006}
+  - component: {fileID: 114658637099969114}
   m_Layer: 8
   m_Name: Feet
   m_TagString: Untagged
@@ -318,6 +319,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589982290e8303b41abad715e22eb034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114658637099969114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841709013625074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024b204f58698dd4ea1252f60ff021f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!114 &114880176084876574
 MonoBehaviour:
   m_ObjectHideFlags: 1
