@@ -7,24 +7,32 @@
 /// </summary>
 public class RotateToAlignWithFloor : MonoBehaviour
 {
+  static readonly Quaternion flipRotation =
+    Quaternion.Euler(0, 180, 0);
+
   /// <summary>
   /// Rotation lerp speed while standing.
   /// </summary>
   [SerializeField]
-  float lerpSpeedToFloor = 50f;
+  float lerpSpeedToFloor = .4f;
 
   /// <summary>
   /// Rotation lerp speed while in the air.
   /// </summary>
   [SerializeField]
-  float lerpSpeedWhileInAir = 1f;
+  float lerpSpeedWhileInAir = .05f;
 
   FloorDetector floorDetector;
+
+  TurnAround turnAround;
 
   protected void Awake()
   {
     floorDetector
       = GetComponentInChildren<FloorDetector>();
+    turnAround = GetComponent<TurnAround>();
+
+    Debug.Assert(floorDetector != null);
   }
 
   protected void Update()
@@ -40,6 +48,11 @@ public class RotateToAlignWithFloor : MonoBehaviour
     {
       rotation = Quaternion.identity;
       speed = lerpSpeedWhileInAir;
+    }
+
+    if(turnAround != null && turnAround.isFacingLeft)
+    {
+      rotation *= flipRotation;
     }
 
     transform.rotation = Quaternion.Lerp(
