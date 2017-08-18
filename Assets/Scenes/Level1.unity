@@ -513,9 +513,7 @@ Prefab:
       propertyPath: m_Name
       value: Hammer (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21a2e799b7d63bb4d8f9154569fd3f74, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &235236275 stripped
@@ -1357,9 +1355,7 @@ Prefab:
       propertyPath: m_Name
       value: Hammer (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21a2e799b7d63bb4d8f9154569fd3f74, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &507411989 stripped
@@ -3792,8 +3788,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21a2e799b7d63bb4d8f9154569fd3f74, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1420655735 stripped
@@ -4644,9 +4639,7 @@ Prefab:
       propertyPath: m_Name
       value: Hammer (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21a2e799b7d63bb4d8f9154569fd3f74, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1809313682 stripped
