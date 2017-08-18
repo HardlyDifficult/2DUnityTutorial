@@ -12,7 +12,10 @@ public class TurnAround : MonoBehaviour
 
   Rigidbody2D myBody;
 
-  bool isFacingLeft;
+  public bool isFacingLeft
+  {
+    get; private set;
+  }
 
   protected void Awake()
   {
