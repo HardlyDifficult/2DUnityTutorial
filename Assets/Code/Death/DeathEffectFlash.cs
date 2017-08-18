@@ -18,6 +18,10 @@ public class DeathEffectFlash : DeathEffect
   
   public override float PlayDeathEffects()
   {
+    Debug.Assert(lengthToFlashFor > 0);
+    Debug.Assert(timePerColorChange > 0);
+    Debug.Assert(colorChangeTimeFactorPerFlash > 0);
+
     StartCoroutine(FlashToDeath());
 
     return lengthToFlashFor;
@@ -27,6 +31,8 @@ public class DeathEffectFlash : DeathEffect
   {
     SpriteRenderer[] spriteList
       = GetComponentsInChildren<SpriteRenderer>();
+    Debug.Assert(spriteList.Length > 0);
+
     float timePassed = 0;
     bool isRed = false;
     while(timePassed < lengthToFlashFor)
