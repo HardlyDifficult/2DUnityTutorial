@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// Flips a single sprite on this GameObject or its child
@@ -7,6 +8,16 @@
 [RequireComponent(typeof(Rigidbody2D))]
 public class TurnAround : MonoBehaviour
 {
+  public bool isFacingLeft
+  {
+    get
+    {
+      return sprite.flipX;
+    }
+  }
+
+  public event Action onTurnAround;
+
   Rigidbody2D myBody;
 
   SpriteRenderer sprite;
@@ -27,8 +38,15 @@ public class TurnAround : MonoBehaviour
     // Don't flip if the entity is hardly moving
     if(Mathf.Abs(xVelocity) > 0.1)
     {
-      bool isGoingLeft = xVelocity < 0;
-      sprite.flipX = isGoingLeft;
+      bool isTravelingLeft = xVelocity < 0;
+      if(isFacingLeft != isTravelingLeft)
+      {
+        sprite.flipX = isTravelingLeft;
+        if(onTurnAround != null)
+        {
+          onTurnAround();
+        }
+      }
     }
   }
 }
