@@ -86,6 +86,8 @@ GameObject:
   - component: {fileID: 114593219736798534}
   - component: {fileID: 114607411671949268}
   - component: {fileID: 114201744448956206}
+  - component: {fileID: 114804288441980664}
+  - component: {fileID: 114135001681046922}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -286,6 +288,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac5bf19dff250c4eb2b3e4e542070b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114135001681046922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74f7bb7f9642834c8022d79135b4742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectToSpawnOnDeath: {fileID: 1176549549528534, guid: 2564915677f58814f8885ae0f79dbfa8,
+    type: 2}
 --- !u!114 &114165250994760850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -414,6 +429,17 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &114804288441980664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880eb01c2005dd34aa6611d8449b69b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114824366208033684
 MonoBehaviour:
   m_ObjectHideFlags: 1
