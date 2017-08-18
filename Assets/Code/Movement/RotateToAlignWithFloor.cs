@@ -42,16 +42,17 @@ public class RotateToAlignWithFloor : MonoBehaviour
     if(floorDetector.floorRotation != null)
     {
       rotation = floorDetector.floorRotation.Value;
-      if(turnAround != null && turnAround.isFacingLeft)
-      {
-        rotation *= flipRotation;
-      }
       speed = lerpSpeedToFloor;
     }
     else
     {
       rotation = Quaternion.identity;
       speed = lerpSpeedWhileInAir;
+    }
+
+    if(turnAround != null && turnAround.isFacingLeft)
+    {
+      rotation *= flipRotation;
     }
 
     transform.rotation = Quaternion.Lerp(
