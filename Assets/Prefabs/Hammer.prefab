@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 60481127803257534}
   - component: {fileID: 95100000502825152}
   - component: {fileID: 114191115241575180}
+  - component: {fileID: 114252886218481434}
+  - component: {fileID: 114568572493753964}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -169,6 +171,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationToPlay: HammerSwing
+--- !u!114 &114252886218481434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1724055805108706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880eb01c2005dd34aa6611d8449b69b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114304250368398862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +207,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTillDeath: 5
+--- !u!114 &114568572493753964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1724055805108706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67bec80b068e884abfcfc682abf1a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lengthToFlashFor: 5
+  timePerColorChange: 0.75
+  colorChangeTimeFactorPerFlash: 0.85
 --- !u!114 &114974222599255268
 MonoBehaviour:
   m_ObjectHideFlags: 1
