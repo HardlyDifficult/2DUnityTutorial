@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Flips a single sprite on this GameObject or its child
@@ -8,27 +7,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class TurnAround : MonoBehaviour
 {
-  public bool isFacingLeft
-  {
-    get
-    {
-      return sprite.flipX;
-    }
-  }
-
-  public event Action onTurnAround;
+  static readonly Quaternion flipRotation =
+    Quaternion.Euler(0, 180, 0);
 
   Rigidbody2D myBody;
 
-  SpriteRenderer sprite;
+  bool isFacingLeft;
 
   protected void Awake()
   {
     myBody = GetComponent<Rigidbody2D>();
-    sprite = GetComponentInChildren<SpriteRenderer>();
 
     Debug.Assert(myBody != null);
-    Debug.Assert(sprite != null);
   }
 
   protected void FixedUpdate()
@@ -41,11 +31,8 @@ public class TurnAround : MonoBehaviour
       bool isTravelingLeft = xVelocity < 0;
       if(isFacingLeft != isTravelingLeft)
       {
-        sprite.flipX = isTravelingLeft;
-        if(onTurnAround != null)
-        {
-          onTurnAround();
-        }
+        isFacingLeft = isTravelingLeft;
+        transform.rotation *= flipRotation;
       }
     }
   }
