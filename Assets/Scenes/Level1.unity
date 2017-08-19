@@ -259,6 +259,8 @@ GameObject:
   - component: {fileID: 58603584}
   - component: {fileID: 58603585}
   - component: {fileID: 58603586}
+  - component: {fileID: 58603588}
+  - component: {fileID: 58603587}
   m_Layer: 11
   m_Name: Level2
   m_TagString: Untagged
@@ -324,6 +326,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &58603587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58603583}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &58603588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58603583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 58603587}
 --- !u!1 &185304176
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +434,8 @@ GameObject:
   - component: {fileID: 210935695}
   - component: {fileID: 210935696}
   - component: {fileID: 210935697}
+  - component: {fileID: 210935699}
+  - component: {fileID: 210935698}
   m_Layer: 11
   m_Name: Level3
   m_TagString: Untagged
@@ -470,6 +501,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &210935698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210935694}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &210935699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210935694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 210935698}
 --- !u!1001 &235236274
 Prefab:
   m_ObjectHideFlags: 0
@@ -712,6 +770,8 @@ GameObject:
   - component: {fileID: 374647644}
   - component: {fileID: 374647645}
   - component: {fileID: 374647646}
+  - component: {fileID: 374647648}
+  - component: {fileID: 374647647}
   m_Layer: 11
   m_Name: Level5
   m_TagString: Untagged
@@ -777,6 +837,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &374647647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374647643}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &374647648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374647643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 374647647}
 --- !u!1 &409710848
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +944,8 @@ GameObject:
   - component: {fileID: 424830659}
   - component: {fileID: 424830660}
   - component: {fileID: 424830661}
+  - component: {fileID: 424830663}
+  - component: {fileID: 424830662}
   m_Layer: 11
   m_Name: Level4
   m_TagString: Untagged
@@ -922,6 +1011,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &424830662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424830658}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &424830663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424830658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 424830662}
 --- !u!1 &433834102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1489,8 @@ GameObject:
   - component: {fileID: 511677994}
   - component: {fileID: 511677995}
   - component: {fileID: 511677996}
+  - component: {fileID: 511677998}
+  - component: {fileID: 511677997}
   m_Layer: 11
   m_Name: Level7
   m_TagString: Untagged
@@ -1439,6 +1557,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &511677997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511677993}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &511677998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511677993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 511677997}
 --- !u!1 &593778270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +1910,8 @@ GameObject:
   - component: {fileID: 778738199}
   - component: {fileID: 778738200}
   - component: {fileID: 778738201}
+  - component: {fileID: 778738203}
+  - component: {fileID: 778738202}
   m_Layer: 11
   m_Name: Level6
   m_TagString: Untagged
@@ -1830,6 +1977,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &778738202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778738198}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &778738203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778738198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 778738202}
 --- !u!1 &783446825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +3002,10 @@ PlayableDirector:
     value: {fileID: 296630676}
   - key: {fileID: 114391284751176894, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
     value: {fileID: 1902305692}
+  - key: {fileID: 114476194857764190, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114124509064039302, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &1087859522
@@ -3070,6 +3248,8 @@ GameObject:
   - component: {fileID: 1212732794}
   - component: {fileID: 1212732795}
   - component: {fileID: 1212732796}
+  - component: {fileID: 1212732798}
+  - component: {fileID: 1212732797}
   m_Layer: 11
   m_Name: Level1B
   m_TagString: Untagged
@@ -3134,6 +3314,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1212732797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212732793}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &1212732798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212732793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 1212732797}
 --- !u!1 &1264371562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3830,8 @@ GameObject:
   - component: {fileID: 1358960146}
   - component: {fileID: 1358960147}
   - component: {fileID: 1358960148}
+  - component: {fileID: 1358960150}
+  - component: {fileID: 1358960149}
   m_Layer: 11
   m_Name: Level1A
   m_TagString: Untagged
@@ -3687,6 +3896,33 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1358960149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358960145}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationFactor: 1
+  maxTimeBetweenRotations: 0.25
+--- !u!114 &1358960150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358960145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 0
+  componentListToEnable:
+  - {fileID: 1358960149}
 --- !u!1 &1361245442
 GameObject:
   m_ObjectHideFlags: 0
