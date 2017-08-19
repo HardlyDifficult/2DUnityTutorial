@@ -56,6 +56,7 @@ public class LevelController : MonoBehaviour
     isGameOver = true;
 
     // TODO
+    print("YouWin");
   }
 
   void StartLevel()
@@ -77,5 +78,6 @@ public class LevelController : MonoBehaviour
   void YouLose()
   {
     // TODO
+    print("YouLose");
   }
 }
