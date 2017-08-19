@@ -42,5 +42,7 @@ public class CharacterAnimatorController : MonoBehaviour
     animator.SetBool("isClimbing", ladderMovement.isOnLadder);
     animator.SetBool("hasWeapon", 
       weaponHolder.currentWeapon != null);
+
+    print(ladderMovement.isOnLadder);
   }
 }
