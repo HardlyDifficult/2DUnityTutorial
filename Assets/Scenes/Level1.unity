@@ -4133,6 +4133,7 @@ GameObject:
   - component: {fileID: 1593579803}
   - component: {fileID: 1593579802}
   - component: {fileID: 1593579804}
+  - component: {fileID: 1593579805}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -4146,7 +4147,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1593579801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c3d37df1bafb3948b8f9d0af2604df9, type: 3}
   m_Name: 
@@ -4209,6 +4210,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.081706, y: 2.3623729}
   m_EdgeRadius: 0
+--- !u!114 &1593579805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593579801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 1
+  componentListToEnable:
+  - {fileID: 1593579802}
 --- !u!1 &1602638160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,6 +4837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852439901}
   - component: {fileID: 1852439900}
+  - component: {fileID: 1852439902}
   m_Layer: 0
   m_Name: EvilCloud
   m_TagString: Untagged
@@ -4835,7 +4851,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852439899}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c3d37df1bafb3948b8f9d0af2604df9, type: 3}
   m_Name: 
@@ -4872,6 +4888,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1852439902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852439899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 1
+  componentListToEnable:
+  - {fileID: 1852439900}
 --- !u!1 &1859558294
 GameObject:
   m_ObjectHideFlags: 0
