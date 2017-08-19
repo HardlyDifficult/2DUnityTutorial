@@ -535,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &296630677
 Transform:
   m_ObjectHideFlags: 0
@@ -2742,6 +2742,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1087859519}
   - component: {fileID: 1087859520}
+  - component: {fileID: 1087859522}
+  - component: {fileID: 1087859521}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -2804,6 +2806,47 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!320 &1087859521
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087859518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114655889931415846, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 1087859518}
+  - key: {fileID: 114789840185879028, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 1767243054}
+  - key: {fileID: 114894422050625430, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 296630676}
+  - key: {fileID: 114391284751176894, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
+    value: {fileID: 1902305692}
+  m_ExposedReferences:
+    m_References: []
+--- !u!95 &1087859522
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087859518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d31eccb4dfb70b4785145416482eee4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1105303301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,7 +4578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1767243055
 Transform:
   m_ObjectHideFlags: 0
@@ -5055,7 +5098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1902305693
 MonoBehaviour:
   m_ObjectHideFlags: 0
