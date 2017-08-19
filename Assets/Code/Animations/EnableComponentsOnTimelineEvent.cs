@@ -15,6 +15,8 @@ public class EnableComponentsOnTimelineEvent : MonoBehaviour
   public void OnEvent(
     TimelineEventPlayable.EventType currentEventType)
   {
+    Debug.Assert(componentListToEnable.Length > 0);
+
     if(currentEventType == eventType)
     {
       for(int i = 0; i < componentListToEnable.Length; i++)
