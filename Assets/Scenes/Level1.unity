@@ -3077,6 +3077,10 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114124509064039302, guid: 72fd4001f0a749c49a10947bf7341cf9, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 114106161363407340, guid: f305a2ec5059df24087b8f0046a1fff6, type: 2}
+    value: {fileID: 1087859518}
+  - key: {fileID: 114603362634924802, guid: f305a2ec5059df24087b8f0046a1fff6, type: 2}
+    value: {fileID: 1800338078}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &1087859522
@@ -5550,6 +5554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPrefab: {fileID: 1561968062370088, guid: 668a22c6ef18b174c899ddc2a1103cee,
     type: 2}
+  director: {fileID: 1087859521}
+  youWinPlayable: {fileID: 11400000, guid: f305a2ec5059df24087b8f0046a1fff6, type: 2}
 --- !u!4 &1902305694
 Transform:
   m_ObjectHideFlags: 0
