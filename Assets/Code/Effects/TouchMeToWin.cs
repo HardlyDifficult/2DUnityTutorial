@@ -10,7 +10,7 @@ public class TouchMeToWin : MonoBehaviour
   static int totalNumberActive;
 
   [SerializeField]
-  MonoBehaviour componentToEnableOnTouch;
+  Behaviour componentToEnableOnTouch;
 
   [SerializeField]
   LayerMask touchableLayers;
