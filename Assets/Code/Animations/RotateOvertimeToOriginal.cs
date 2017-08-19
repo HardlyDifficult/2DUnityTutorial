@@ -12,10 +12,10 @@ using UnityEngine;
 public class RotateOvertimeToOriginal : MonoBehaviour
 {
   [SerializeField]
-  float rotationFactor = 1;
+  float rotationFactor = .25f;
 
   [SerializeField]
-  float maxTimeBetweenRotations = .25f;
+  float maxTimeBetweenRotations = .5f;
 
   Quaternion targetRotation;
 
@@ -49,6 +49,7 @@ public class RotateOvertimeToOriginal : MonoBehaviour
         transform.rotation = targetRotation;
         yield break;
       }
+
       transform.rotation = Quaternion.Lerp(
         Quaternion.identity,
         targetRotation,

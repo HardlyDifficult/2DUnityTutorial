@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &58603588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,8 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &210935699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,8 +848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &374647648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,8 +1022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &424830663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1568,8 +1568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &511677998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,8 +1988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &778738203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,8 +3325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &1212732798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3907,8 +3907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee1bedb00e8baa468d4740e2e3cb649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationFactor: 1
-  maxTimeBetweenRotations: 0.25
+  rotationFactor: 0.25
+  maxTimeBetweenRotations: 0.5
 --- !u!114 &1358960150
 MonoBehaviour:
   m_ObjectHideFlags: 0
