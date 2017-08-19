@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 114201744448956206}
   - component: {fileID: 114804288441980664}
   - component: {fileID: 114135001681046922}
+  - component: {fileID: 114851235194614412}
   m_Layer: 8
   m_Name: HoverGuy
   m_TagString: Untagged
@@ -453,6 +454,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpSpeedToFloor: 50
   lerpSpeedWhileInAir: 1
+--- !u!114 &114851235194614412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962356292160402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad8050b07393104787d6cfda19aea2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
+  - {fileID: 50622030748462004}
+  - {fileID: 95860209262634560}
+  - {fileID: 114001274424933216}
 --- !u!114 &114880176084876574
 MonoBehaviour:
   m_ObjectHideFlags: 1

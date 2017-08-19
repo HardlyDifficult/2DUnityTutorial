@@ -4445,6 +4445,7 @@ GameObject:
   - component: {fileID: 1593579802}
   - component: {fileID: 1593579804}
   - component: {fileID: 1593579805}
+  - component: {fileID: 1593579806}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -4534,6 +4535,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventType: 1
   componentListToEnable:
+  - {fileID: 1593579802}
+--- !u!114 &1593579806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593579801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad8050b07393104787d6cfda19aea2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
   - {fileID: 1593579802}
 --- !u!1 &1602638160
 GameObject:
@@ -5220,6 +5234,7 @@ GameObject:
   - component: {fileID: 1852439901}
   - component: {fileID: 1852439900}
   - component: {fileID: 1852439902}
+  - component: {fileID: 1852439903}
   m_Layer: 0
   m_Name: EvilCloud
   m_TagString: Untagged
@@ -5283,6 +5298,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventType: 1
   componentListToEnable:
+  - {fileID: 1852439900}
+--- !u!114 &1852439903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852439899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad8050b07393104787d6cfda19aea2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
   - {fileID: 1852439900}
 --- !u!1 &1859558294
 GameObject:
