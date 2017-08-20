@@ -5,7 +5,6 @@ using UnityEngine;
 /// Climbs a ladder up or down given desiredClimbDirection.
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Collider2D))]
 public class LadderMovement : MonoBehaviour
 {
   /// <summary>
@@ -36,8 +35,6 @@ public class LadderMovement : MonoBehaviour
   ContactFilter2D ladderFilter;
 
   Rigidbody2D myBody;
-
-  Collider2D myCollider;
 
   FloorDetector floorDetector;
 
@@ -89,11 +86,9 @@ public class LadderMovement : MonoBehaviour
       == LayerMask.GetMask("Ladder"));
 
     myBody = GetComponent<Rigidbody2D>();
-    myCollider = GetComponent<Collider2D>();
     floorDetector = GetComponentInChildren<FloorDetector>();
 
     Debug.Assert(myBody != null);
-    Debug.Assert(myCollider != null);
     Debug.Assert(floorDetector != null);
   }
 
@@ -228,7 +223,7 @@ public class LadderMovement : MonoBehaviour
   GameObject FindClosestLadder()
   {
     int resultCount
-      = myCollider.OverlapCollider(
+      = floorDetector.feetCollider.OverlapCollider(
         ladderFilter, tempColliderList);
 
     GameObject closestLadder = null;
