@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
-[RequireComponent(typeof(DisablePhysics))] //
+[RequireComponent(typeof(DisablePhysics))] 
 public class LadderMovement : MonoBehaviour
 {
   /// <summary>
@@ -38,11 +38,9 @@ public class LadderMovement : MonoBehaviour
 
   Rigidbody2D myBody;
 
-  Collider2D myCollider;
-
   FloorDetector floorDetector;
 
-  DisablePhysics disablePhysics; //
+  DisablePhysics disablePhysics; 
 
   /// <summary>
   /// Used for OverlapCollider below.
@@ -92,12 +90,10 @@ public class LadderMovement : MonoBehaviour
       == LayerMask.GetMask("Ladder"));
 
     myBody = GetComponent<Rigidbody2D>();
-    myCollider = GetComponent<Collider2D>();
     floorDetector = GetComponentInChildren<FloorDetector>();
-    disablePhysics = GetComponent<DisablePhysics>(); //
+    disablePhysics = GetComponent<DisablePhysics>(); 
 
     Debug.Assert(myBody != null);
-    Debug.Assert(myCollider != null);
     Debug.Assert(floorDetector != null);
     Debug.Assert(disablePhysics != null);
   }
@@ -235,7 +231,7 @@ public class LadderMovement : MonoBehaviour
   GameObject FindClosestLadder()
   {
     int resultCount
-      = myCollider.OverlapCollider(
+      = floorDetector.feetCollider.OverlapCollider(
         ladderFilter, tempColliderList);
 
     GameObject closestLadder = null;
