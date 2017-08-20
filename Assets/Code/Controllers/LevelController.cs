@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Playables;
 
 /// <summary>
 /// Coordinates level specific activities.
@@ -7,6 +8,20 @@ public class LevelController : MonoBehaviour
 {
   [SerializeField]
   GameObject characterPrefab;
+
+  /// <summary>
+  /// A reference to the director which owns the playable
+  /// selected below.
+  /// </summary>
+  [SerializeField]
+  PlayableDirector director;
+
+  /// <summary>
+  /// A reference to the playable timeline to use when the 
+  /// player wins.
+  /// </summary>
+  [SerializeField]
+  PlayableAsset youWinPlayable;
 
   bool isGameOver;
 
@@ -55,8 +70,7 @@ public class LevelController : MonoBehaviour
     }
     isGameOver = true;
 
-    // TODO
-    print("YouWin");
+    director.Play(youWinPlayable);
   }
 
   void StartLevel()
