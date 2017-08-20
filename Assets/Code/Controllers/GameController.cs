@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// A singleton / DontDestroyOnLoad used to persist information
@@ -57,6 +58,19 @@ public class GameController : MonoBehaviour
 
     // Ensure screenBounds has a value when the game begins
     CalcScreenSize();
+
+    SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+  }
+
+  void SceneManager_sceneLoaded(
+   Scene scene,
+   LoadSceneMode sceneMode)
+  {
+    if(scene.name == "Level1")
+    {
+      lifeCount = originalLifeCount;
+      points = 0;
+    }
   }
 
   protected void Update()

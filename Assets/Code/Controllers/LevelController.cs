@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Coordinates level specific activities.
@@ -100,7 +101,6 @@ public class LevelController : MonoBehaviour
 
   void YouLose()
   {
-    // TODO
-    print("YouLose");
+    SceneManager.LoadScene("Menu");
   }
 }
