@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Coordinates level specific activities.
@@ -71,6 +72,15 @@ public class LevelController : MonoBehaviour
     isGameOver = true;
 
     director.Play(youWinPlayable);
+
+    DisableComponentsOnEndOfLevel[] disableComponentList
+      = GameObject.FindObjectsOfType<DisableComponentsOnEndOfLevel>();
+    for(int i = 0; i < disableComponentList.Length; i++)
+    {
+      DisableComponentsOnEndOfLevel disableComponent 
+        = disableComponentList[i];
+      disableComponent.OnEndOfLevel();
+    }
   }
 
   void StartLevel()
@@ -91,7 +101,6 @@ public class LevelController : MonoBehaviour
 
   void YouLose()
   {
-    // TODO
-    print("YouLose");
+    SceneManager.LoadScene("Menu");
   }
 }

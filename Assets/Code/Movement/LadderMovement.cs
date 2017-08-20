@@ -189,7 +189,7 @@ public class LadderMovement : MonoBehaviour
 
   void OnGettingOnLadder()
   {
-    disablePhysics.enabled = true; //
+    disablePhysics.enabled = true; 
     if(onGettingOnLadder != null)
     {
       onGettingOnLadder();
@@ -198,7 +198,7 @@ public class LadderMovement : MonoBehaviour
 
   void OnGettingOffLadder()
   {
-    disablePhysics.enabled = false; //
+    disablePhysics.enabled = false; 
     desiredClimbDirection = 0;
 
     if(onGettingOffLadder != null)
