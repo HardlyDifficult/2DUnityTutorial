@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
-[RequireComponent(typeof(DisablePhysics))] 
+[RequireComponent(typeof(DisablePhysics))]
 public class LadderMovement : MonoBehaviour
 {
   /// <summary>
@@ -40,7 +40,7 @@ public class LadderMovement : MonoBehaviour
 
   FloorDetector floorDetector;
 
-  DisablePhysics disablePhysics; 
+  DisablePhysics disablePhysics;
 
   /// <summary>
   /// Used for OverlapCollider below.
@@ -58,7 +58,7 @@ public class LadderMovement : MonoBehaviour
     }
     private set
     {
-      Debug.Assert(value == null 
+      Debug.Assert(value == null
         || value.layer == LayerMask.NameToLayer("Ladder"));
 
       if(ladderWeAreOn == value)
@@ -91,7 +91,7 @@ public class LadderMovement : MonoBehaviour
 
     myBody = GetComponent<Rigidbody2D>();
     floorDetector = GetComponentInChildren<FloorDetector>();
-    disablePhysics = GetComponent<DisablePhysics>(); 
+    disablePhysics = GetComponent<DisablePhysics>();
 
     Debug.Assert(myBody != null);
     Debug.Assert(floorDetector != null);
