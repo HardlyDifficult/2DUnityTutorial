@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 114625969}
   - component: {fileID: 114625968}
   - component: {fileID: 114625967}
+  - component: {fileID: 114625973}
   m_Layer: 0
   m_Name: BreakawayBlock (6)
   m_TagString: Untagged
@@ -597,7 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 114625973}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -656,6 +657,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114625973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114625966}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &161638953
 Prefab:
   m_ObjectHideFlags: 0
@@ -704,7 +716,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: eventType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: componentListToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 161638957}
+    m_RemovedComponents:
+    - {fileID: 114654932243230700, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &161638954 stripped
@@ -737,6 +760,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &161638957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161638955}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &167671886
 Prefab:
   m_ObjectHideFlags: 0
@@ -1034,6 +1068,7 @@ GameObject:
   - component: {fileID: 219221246}
   - component: {fileID: 219221245}
   - component: {fileID: 219221244}
+  - component: {fileID: 219221250}
   m_Layer: 0
   m_Name: BreakawayBlock
   m_TagString: Untagged
@@ -1136,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 219221250}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -1195,6 +1230,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &219221250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219221243}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &343463845
 Prefab:
   m_ObjectHideFlags: 0
@@ -2336,6 +2382,7 @@ GameObject:
   - component: {fileID: 777195752}
   - component: {fileID: 777195751}
   - component: {fileID: 777195750}
+  - component: {fileID: 777195756}
   m_Layer: 0
   m_Name: BreakawayBlock (4)
   m_TagString: Untagged
@@ -2438,7 +2485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 777195756}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -2497,6 +2544,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &777195756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777195749}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &797345149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,6 +3242,7 @@ GameObject:
   - component: {fileID: 997455691}
   - component: {fileID: 997455690}
   - component: {fileID: 997455689}
+  - component: {fileID: 997455695}
   m_Layer: 0
   m_Name: BreakawayBlock (1)
   m_TagString: Untagged
@@ -3286,7 +3345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 997455695}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -3345,6 +3404,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &997455695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997455688}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1038078499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,7 +3926,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: eventType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: componentListToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1116579999}
+    m_RemovedComponents:
+    - {fileID: 114654932243230700, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1116579996 stripped
@@ -3889,6 +3970,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1116579999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1116579997}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1128892008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,7 +4615,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: eventType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: componentListToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1246024106}
+    m_RemovedComponents:
+    - {fileID: 114654932243230700, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1246024103 stripped
@@ -4556,6 +4659,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1246024106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246024104}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1301730965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,6 +4757,7 @@ GameObject:
   - component: {fileID: 1346842254}
   - component: {fileID: 1346842253}
   - component: {fileID: 1346842252}
+  - component: {fileID: 1346842258}
   m_Layer: 0
   m_Name: BreakawayBlock (3)
   m_TagString: Untagged
@@ -4745,7 +4860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 1346842258}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -4804,6 +4919,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346842258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346842251}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1360170684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4817,6 +4943,7 @@ GameObject:
   - component: {fileID: 1360170687}
   - component: {fileID: 1360170686}
   - component: {fileID: 1360170685}
+  - component: {fileID: 1360170691}
   m_Layer: 0
   m_Name: BreakawayBlock (5)
   m_TagString: Untagged
@@ -4919,7 +5046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 1360170691}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -4978,6 +5105,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360170691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360170684}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1369831925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,6 +5129,7 @@ GameObject:
   - component: {fileID: 1369831928}
   - component: {fileID: 1369831927}
   - component: {fileID: 1369831926}
+  - component: {fileID: 1369831932}
   m_Layer: 0
   m_Name: BreakawayBlock (7)
   m_TagString: Untagged
@@ -5093,7 +5232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 1369831932}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -5152,6 +5291,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369831932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369831925}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1377349912
 Prefab:
   m_ObjectHideFlags: 0
@@ -6842,7 +6992,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: eventType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: componentListToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1903964836}
+    m_RemovedComponents:
+    - {fileID: 114654932243230700, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1903964833 stripped
@@ -6875,6 +7036,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1903964836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1903964834}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1950216348
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,6 +7332,8 @@ GameObject:
   - component: {fileID: 2024776289}
   - component: {fileID: 2024776292}
   - component: {fileID: 2024776291}
+  - component: {fileID: 2024776294}
+  - component: {fileID: 2024776293}
   m_Layer: 0
   m_Name: mushroom_red
   m_TagString: Untagged
@@ -7281,6 +7455,31 @@ PolygonCollider2D:
       - {x: 0.205, y: -0.42499998}
       - {x: 0.175, y: -0.16499999}
       - {x: 0.275, y: -0.105}
+--- !u!114 &2024776293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024776288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4bb9f81851e224f89ed9a6c6fad19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: 2
+  componentListToEnable:
+  - {fileID: 2024776294}
+--- !u!114 &2024776294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024776288}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2043471870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7421,7 +7620,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: eventType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554648227216538, guid: 7c1c1c6821ba0b744b873ffa66635be8,
+        type: 2}
+      propertyPath: componentListToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 2044089953}
+    m_RemovedComponents:
+    - {fileID: 114654932243230700, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c1c1c6821ba0b744b873ffa66635be8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &2044089950 stripped
@@ -7454,6 +7664,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &2044089953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2044089951}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2059956371
 Prefab:
   m_ObjectHideFlags: 0
@@ -7532,6 +7753,7 @@ GameObject:
   - component: {fileID: 2119295315}
   - component: {fileID: 2119295314}
   - component: {fileID: 2119295313}
+  - component: {fileID: 2119295319}
   m_Layer: 0
   m_Name: BreakawayBlock (2)
   m_TagString: Untagged
@@ -7634,7 +7856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55042c744ae41f0418b512d0c85a9a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentToEnableOnTouch: {fileID: 0}
+  componentToEnableOnTouch: {fileID: 2119295319}
   touchableLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -7693,6 +7915,17 @@ Transform:
   m_Father: {fileID: 64030981}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119295319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119295312}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5418a99339142240acfd07c91f958ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2142260229
 GameObject:
   m_ObjectHideFlags: 0
